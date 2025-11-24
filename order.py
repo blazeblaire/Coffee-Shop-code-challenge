@@ -15,7 +15,7 @@ class Order:
 
     @property
     def price(self):
-        return self.price
+        return self._price
     @price.setter
     def price(self, val):
         if isinstance(val, float) and 1.0 < val <10.0:
@@ -25,7 +25,7 @@ class Order:
 
     @property
     def customer(self):
-        return self.customer
+        return self._customer
     @customer.setter
     def customer(self, value):
         from customer import Customer
@@ -36,7 +36,7 @@ class Order:
 
     @property
     def coffee(self):
-        return self.coffee
+        return self._coffee
     @coffee.setter
     def coffee(self, value):
         from coffee import Coffee
